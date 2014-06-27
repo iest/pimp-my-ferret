@@ -139,9 +139,11 @@ var App = React.createClass({
 var Answer = React.createClass({
   render: function() {
     return (
-      <button>
-        {this.props.answer}
-      </button>
+      <li>
+        <button className="answer-button">
+          {this.props.answer}
+        </button>
+      </li>
     );
   }
 });
@@ -169,10 +171,12 @@ var Question = React.createClass({
           <Link to="/">Home</Link>
 
           <p>{this.state.question.en}</p>
-          <Answer answer={this.state.question.answers[0]} />
-          <Answer answer={this.state.question.answers[1]} />
-          <Answer answer={this.state.question.answers[2]} />
-          <Answer answer={this.state.question.answers[3]} />
+          <ul className="answer-list">
+            <Answer answer={this.state.question.answers[0]} />
+            <Answer answer={this.state.question.answers[1]} />
+            <Answer answer={this.state.question.answers[2]} />
+            <Answer answer={this.state.question.answers[3]} />
+          </ul>
         </div>
       );
     }

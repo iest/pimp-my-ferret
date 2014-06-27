@@ -28331,8 +28331,10 @@ var App = React.createClass({displayName: 'App',
 var Answer = React.createClass({displayName: 'Answer',
   render: function() {
     return (
-      React.DOM.button(null, 
-        this.props.answer
+      React.DOM.li(null, 
+        React.DOM.button( {className:"answer-button"}, 
+          this.props.answer
+        )
       )
     );
   }
@@ -28361,10 +28363,12 @@ var Question = React.createClass({displayName: 'Question',
           Link( {to:"/"}, "Home"),
 
           React.DOM.p(null, this.state.question.en),
-          Answer( {answer:this.state.question.answers[0]} ),
-          Answer( {answer:this.state.question.answers[1]} ),
-          Answer( {answer:this.state.question.answers[2]} ),
-          Answer( {answer:this.state.question.answers[3]} )
+          React.DOM.ul( {className:"answer-list"}, 
+            Answer( {answer:this.state.question.answers[0]} ),
+            Answer( {answer:this.state.question.answers[1]} ),
+            Answer( {answer:this.state.question.answers[2]} ),
+            Answer( {answer:this.state.question.answers[3]} )
+          )
         )
       );
     }
