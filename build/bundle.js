@@ -19500,41 +19500,69 @@ var Route = Router.Route;
 var Link = Router.Link;
 
 var App = React.createClass({displayName: 'App',
-  render: function() {
+  getInitialState: function() {
+    return {
+      sources: [
+        {
+          name: "Normal words",
+          words: []
+        },
+        {
+          name: "Palindromes",
+          words: []
+        }
+      ]
+    }
+  },
+  indexTemplate: function() {
+    var sources = this.state.sources.map(function(source) {
+      return (
+        React.DOM.li(null, 
+          Link( {to:"question", sourceName:source.name}, 
+            source.name
+          )
+        )  
+      );
+    });
     return (
-      React.DOM.div(null, 
-        React.DOM.ul(null, 
-          React.DOM.li(null, Link( {to:"source"}, "Home")),
-          React.DOM.li(null, Link( {to:"word"}, "Word"))
+      React.DOM.div( {className:"container"}, 
+        React.DOM.header(null, 
+          React.DOM.h1(null, "Pimp my ferret")
         ),
-        this.props.activeRoute
+        React.DOM.ul( {className:"source-list"}, 
+          sources
+        )
+      )
+    );
+  },
+  render: function() {
+    return (
+      React.DOM.div( {className:"container"}, 
+        this.props.activeRoute || this.indexTemplate()
       )
     );
   }
 });
 
-var Source = React.createClass({displayName: 'Source',
-  render: function() {
-    return React.DOM.h2(null, "Source");
-  }
-});
-
-var Word = React.createClass({displayName: 'Word',
+var Question = React.createClass({displayName: 'Question',
   render: function() {
     return (
       React.DOM.div(null, 
-        React.DOM.h2(null, "Word route")
+        React.DOM.h2(null, "Question!"),
+        React.DOM.p(null, this.props.params.sourceName),
+        Link( {to:"/"}, "Home")
       )
     );
   }
 });
 
-React.renderComponent((
-  Route( {handler:App}, 
-    Route( {name:"source", handler:Source}),
-    Route( {name:"word", handler:Word} )
+var routes = (
+  Route( {name:"home", handler:App}, 
+    Route( {name:"question", path:"/:sourceName", handler:Question})
   )
-), document.body);
+);
+
+React.renderComponent(routes, document.body);
 },{"react":175,"react-nested-router":12}],177:[function(require,module,exports){
 // shim for using process in browser
 
