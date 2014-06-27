@@ -5,38 +5,66 @@ var Route = Router.Route;
 var Link = Router.Link;
 
 var App = React.createClass({
-  render: function() {
+  getInitialState: function() {
+    return {
+      sources: [
+        {
+          name: "Normal words",
+          questions: []
+        },
+        {
+          name: "Palindromes",
+          questions: []
+        }
+      ]
+    }
+  },
+  indexTemplate: function() {
+    var sources = this.state.sources.map(function(source) {
+      return (
+        <li>
+          <Link to="question" sourceName={source.name}>
+            {source.name}
+          </Link>
+        </li>  
+      );
+    });
     return (
-      <div>
-        <ul>
-          <li><Link to="source">Home</Link></li>
-          <li><Link to="word">Word</Link></li>
+      <div className="container">
+        <header>
+          <h1>Pimp my ferret</h1>
+        </header>
+        <ul className="source-list">
+          {sources}
         </ul>
-        {this.props.activeRoute}
+      </div>
+    );
+  },
+  render: function() {
+    return (
+      <div className="container">
+        {this.props.activeRoute || this.indexTemplate()}
       </div>
     );
   }
 });
 
-var Source = React.createClass({
-  render: function() {
-    return <h2>Source</h2>;
-  }
-});
-
-var Word = React.createClass({
+var Question = React.createClass({
   render: function() {
     return (
       <div>
-        <h2>Word route</h2>
+        <h2>Question!</h2>
+        <p>{this.props.params.sourceName}</p>
+        <Link to="/">Home</Link>
       </div>
     );
   }
 });
 
-React.renderComponent((
-  <Route handler={App}>
-    <Route name="source" handler={Source}/>
-    <Route name="word" handler={Word} />
+var routes = (
+  <Route name="home" handler={App}>
+    <Route name="question" path="/:sourceName" handler={Question}/>
   </Route>
-), document.body);
+);
+
+React.renderComponent(routes, document.body);
