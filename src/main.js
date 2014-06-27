@@ -155,6 +155,8 @@ var Question = React.createClass({
   getInitialState: function() {
     var self = this;
 
+    self.correctAnswers = 0;
+
     self.logic = new QuestionLogic(this.props.params.sourceName);
 
     self.logic.init().then(function() {
@@ -167,16 +169,36 @@ var Question = React.createClass({
     var result = this.logic.answerQuestion(this.state.question, answer);
 
     if (result) {
-      alert('that is fucking correct');
+      alert('that is fucking correct!');
+
+      this.correctAnswers++;
+
+
     } else {
-      alert('wrong answer asshole')
+      alert('wrong answer asshole!')
+
+      this.correctAnswers = 0;
     }
 
-    this.setState({ question: this.logic.createQuestion() })
+    if (this.correctAnswers === 1) {
+      this.correctAnswers = 0;
+      
+      this.setState({ ferret: 'http://www.smallanimalchannel.com/images/ferrets-magazine/features/2013/ferret-calendar-1305-racer.jpg' })
+    
+      var self = this;
+
+      setTimeout(function() {
+        self.setState({ question: self.logic.createQuestion(), ferret: null })
+      }, 3000);
+    } else {
+      this.setState({ question: this.logic.createQuestion() })
+    }
   },
   render: function() {
     if (!this.state.question) {
       return (<h1>Loading!</h1>);
+    } else if (this.state.ferret) {
+      return (<img src={this.state.ferret} />);
     } else {
       return (
         <div className="container">
