@@ -28328,6 +28328,16 @@ var App = React.createClass({displayName: 'App',
   }
 });
 
+var Answer = React.createClass({displayName: 'Answer',
+  render: function() {
+    return (
+      React.DOM.button(null, 
+        this.props.answer
+      )
+    );
+  }
+});
+
 var Question = React.createClass({displayName: 'Question',
   getInitialState: function() {
     var name = this.props.params.sourceName;
@@ -28339,16 +28349,25 @@ var Question = React.createClass({displayName: 'Question',
       question = creator.createQuestion();
       self.setState({question: question});
     });
-    return {question: {}};
+    return {question: null};
   },
   render: function() {
-    return (
-      React.DOM.div(null, 
-        React.DOM.h2(null, "Question!"),
-        React.DOM.p(null, this.state.question),
-        Link( {to:"/"}, "Home")
-      )
-    );
+    if (!this.state.question) {
+      return (React.DOM.h1(null, "Loading!"));
+    } else {
+      return (
+        React.DOM.div(null, 
+          React.DOM.h2(null, "Question!"),
+          Link( {to:"/"}, "Home"),
+
+          React.DOM.p(null, this.state.question.en),
+          Answer( {answer:this.state.question.answers[0]} ),
+          Answer( {answer:this.state.question.answers[1]} ),
+          Answer( {answer:this.state.question.answers[2]} ),
+          Answer( {answer:this.state.question.answers[3]} )
+        )
+      );
+    }
   }
 });
 

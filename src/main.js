@@ -136,6 +136,16 @@ var App = React.createClass({
   }
 });
 
+var Answer = React.createClass({
+  render: function() {
+    return (
+      <button>
+        {this.props.answer}
+      </button>
+    );
+  }
+});
+
 var Question = React.createClass({
   getInitialState: function() {
     var name = this.props.params.sourceName;
@@ -147,16 +157,25 @@ var Question = React.createClass({
       question = creator.createQuestion();
       self.setState({question: question});
     });
-    return {question: {}};
+    return {question: null};
   },
   render: function() {
-    return (
-      <div>
-        <h2>Question!</h2>
-        <p>{this.state.question}</p>
-        <Link to="/">Home</Link>
-      </div>
-    );
+    if (!this.state.question) {
+      return (<h1>Loading!</h1>);
+    } else {
+      return (
+        <div>
+          <h2>Question!</h2>
+          <Link to="/">Home</Link>
+
+          <p>{this.state.question.en}</p>
+          <Answer answer={this.state.question.answers[0]} />
+          <Answer answer={this.state.question.answers[1]} />
+          <Answer answer={this.state.question.answers[2]} />
+          <Answer answer={this.state.question.answers[3]} />
+        </div>
+      );
+    }
   }
 });
 
