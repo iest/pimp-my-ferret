@@ -142,7 +142,7 @@ var Answer = React.createClass({
   },
   render: function() {
     return (
-      <button onClick={this.handleAnswerClick}>
+      <button onClick={this.handleAnswerClick} className="answer-button">
         {this.props.answer}
       </button>
     );
@@ -182,10 +182,12 @@ var Question = React.createClass({
           <Link to="/">Home</Link>
 
           <p>{this.state.question.en}</p>
-          <Answer answer={this.state.question.answers[0]} clickCallback={this.answerClicked} />
-          <Answer answer={this.state.question.answers[1]} clickCallback={this.answerClicked} />
-          <Answer answer={this.state.question.answers[2]} clickCallback={this.answerClicked} />
-          <Answer answer={this.state.question.answers[3]} clickCallback={this.answerClicked} />
+          <ul className="answer-list">
+            <Answer answer={this.state.question.answers[0]} clickCallback={this.answerClicked} />
+            <Answer answer={this.state.question.answers[1]} clickCallback={this.answerClicked} />
+            <Answer answer={this.state.question.answers[2]} clickCallback={this.answerClicked} />
+            <Answer answer={this.state.question.answers[3]} clickCallback={this.answerClicked} />
+          </ul>
         </div>
       );
     }
