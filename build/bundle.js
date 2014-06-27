@@ -19505,11 +19505,11 @@ var App = React.createClass({displayName: 'App',
       sources: [
         {
           name: "Normal words",
-          words: []
+          questions: []
         },
         {
           name: "Palindromes",
-          words: []
+          questions: []
         }
       ]
     }

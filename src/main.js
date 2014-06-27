@@ -10,11 +10,11 @@ var App = React.createClass({
       sources: [
         {
           name: "Normal words",
-          words: []
+          questions: []
         },
         {
           name: "Palindromes",
-          words: []
+          questions: []
         }
       ]
     }
