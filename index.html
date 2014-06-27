@@ -1,0 +1,47 @@
+<!-- template.html -->
+<html>
+  <head>
+    <title>Hello React</title>
+    <script src="http://fb.me/react-with-addons-0.10.0.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.10.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+
+    <style type="text/css">
+      body {
+        font: 1.5em/1.5 "Avenir Next";        
+        background: #f5f5f5;
+      }
+
+      .item {
+        height: 1.5em;
+        box-sizing: border-box;
+        background: #fff;
+      }
+
+      .example-enter {
+        transition: all 200ms ease-in;
+        height: 0;
+        -webkit-transform: scale(0.5) translateX(-100%);
+      }
+
+      .example-enter.example-enter-active {
+        height: 1.5em;
+        -webkit-transform: scale(1);
+      }
+      .example-leave {
+        transition: all 200ms ease-in;
+        -webkit-transform: scale(0.5) translateX(-100%);
+      }
+
+      .example-leave.example-leave-active {
+        height: 0;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type="text/jsx" src="build/tutorial.js"></script>
+  </body>
+</html>
