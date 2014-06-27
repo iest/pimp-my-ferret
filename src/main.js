@@ -233,6 +233,34 @@ var Answer = React.createClass({
   }
 });
 
+var Timer = React.createClass({
+  getInitialState: function() {
+    var self = this;
+
+    setTimeout(update, 100);
+
+    function update() {
+      var timeLeft = self.state.timeLeft - 100;
+
+      if (timeLeft > 0) {
+        self.setState({ timeLeft: timeLeft });
+        setTimeout(update, 100);
+      } else {
+        self.props.onTimeout(); 
+      }
+    }
+
+    return { timeLeft: parseInt(this.props.time) };
+  },
+  render: function() {
+    return (
+      <div>
+        {this.state.timeLeft}
+      </div>
+    );
+  }
+});
+
 var Question = React.createClass({
   getInitialState: function() {
     var self = this;
@@ -273,6 +301,9 @@ var Question = React.createClass({
       }, 1000);
     };
   },
+  handleTimeout: function() {
+    this.setState({ question: this.logic.createQuestion() })
+  },
   render: function() {
     if (!this.state.question) {
       return (<h1>Loading!</h1>);
@@ -296,6 +327,8 @@ var Question = React.createClass({
     }
   }
 });
+
+
 
 var routes = (
   <Route name="home" handler={App}>
