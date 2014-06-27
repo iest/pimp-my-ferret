@@ -1,12 +1,11 @@
 var Q = require('q');
 var _ = require('lodash');
 
-var sourceName = 'basic';
-
 module.export = function(sourceName) {
   var self = this;
 
   self.init = function () {
+    debugger;
     return loadMasterList().then(function(masterList) {
       self.masterList = masterList; 
       self.userList = loadUserList();
