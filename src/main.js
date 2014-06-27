@@ -142,9 +142,11 @@ var Answer = React.createClass({
   },
   render: function() {
     return (
-      <button onClick={this.handleAnswerClick} className="answer-button">
-        {this.props.answer}
-      </button>
+      <li>
+        <button onClick={this.handleAnswerClick} className="answer-button">
+          {this.props.answer}
+        </button>
+      </li>
     );
   }
 });
@@ -177,11 +179,11 @@ var Question = React.createClass({
       return (<h1>Loading!</h1>);
     } else {
       return (
-        <div>
-          <h2>Question!</h2>
-          <Link to="/">Home</Link>
-
-          <p>{this.state.question.en}</p>
+        <div className="container">
+          <div className="answer-header">
+            <Link to="/" className="back-button">Home</Link>
+            <h2>{this.state.question.en}</h2>
+          </div>
           <ul className="answer-list">
             <Answer answer={this.state.question.answers[0]} clickCallback={this.answerClicked} />
             <Answer answer={this.state.question.answers[1]} clickCallback={this.answerClicked} />

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <style type="text/css">
     body {
+      position: relative;
       background: #FCEAE4;
       font: 1.5em/1.5 "Helvetica Neue";
       letter-spacing: -1px;
@@ -12,6 +13,11 @@
       text-align: center;
       padding: 0;
       margin: 0;
+      height: 100%;
+    }
+    .container {
+      position: relative;
+      height: 100%;
     }
     .source-list {
       list-style: none;
@@ -31,7 +37,21 @@
     .source-list li:nth-child(1) a {
       background: #EFC1B0;
     }
+
+    .answer-header {
+      padding: 2em;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 0.25em;
+      left: 0.25em;
+      text-decoration: none;
+      color: #ED7C55;
+    }
+
     .answer-list {
+      display: block;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -47,6 +67,7 @@
       height: 4em;
       padding: 1em;
       border: none;
+      cursor: pointer;
     }
     .answer-list li:first-child .answer-button {
       background: #ED7C55;
