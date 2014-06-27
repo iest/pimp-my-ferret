@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-var React = require('react');
+var React = require('react/addons');
 var Router = require('react-nested-router');
 var Route = Router.Route;
 var Link = Router.Link;
@@ -32,7 +32,7 @@ var QuestionLogic = function(sourceName) {
     var question = {
       en: word.en,
       target: word.target,
-      language: word.language,
+      language: word.lang,
       answers: _.shuffle(wrongAnswers.concat(word.target))
     };
 
@@ -147,17 +147,60 @@ var App = React.createClass({
 });
 
 var Answer = React.createClass({
+  getInitialState: function() {
+    return {
+      answered: false
+    }
+  },
   handleAnswerClick: function() {
+    var self = this;
     this.props.clickCallback(this.props.answer);
+    this.setState({
+      answered: true
+    });
+    setTimeout(function() {
+      self.setState({
+        answered: false
+      })
+    }, 1000);
   },
   render: function() {
-    return (
-      <li>
-        <button onClick={this.handleAnswerClick} className="answer-button">
-          {this.props.answer}
-        </button>
-      </li>
-    );
+
+    if (this.state.answered && this.props.isCorrect) {
+      var cx = React.addons.classSet;
+      var classes = cx({
+        "answer-button": true,
+        "answer-button--correct": this.props.isCorrect
+      });
+      return (
+        <li>
+          <button onClick={this.handleAnswerClick} className={classes}>
+            {this.props.correctAnswerLang}
+          </button>
+        </li>
+      );
+    } else if (this.state.answered && this.props.isWrong) {
+      var cx = React.addons.classSet;
+      var classes = cx({
+        "answer-button": true,
+        "answer-button--wrong": this.props.isWrong
+      });
+      return (
+        <li>
+          <button onClick={this.handleAnswerClick} className={classes}>
+            {this.props.answer}
+          </button>
+        </li>
+      );
+    } else {
+      return (
+        <li>
+          <button onClick={this.handleAnswerClick} className="answer-button">
+            {this.props.answer}
+          </button>
+        </li>
+      );
+    }
   }
 });
 
@@ -177,6 +220,7 @@ var Question = React.createClass({
   },
   answerClicked: function(answer) {
     var result = this.logic.answerQuestion(this.state.question, answer);
+    var self = this;
 
     if (result) {
       this.correctAnswers++;
@@ -195,8 +239,10 @@ var Question = React.createClass({
         self.setState({ question: self.logic.createQuestion(), ferret: null })
       }, 3000);
     } else {
-      this.setState({ question: this.logic.createQuestion() })
-    }
+      setTimeout(function() {
+        self.setState({ question: self.logic.createQuestion() })
+      }, 1000);
+    };
   },
   render: function() {
     if (!this.state.question) {
@@ -211,10 +257,10 @@ var Question = React.createClass({
             <h2>{this.state.question.en}</h2>
           </div>
           <ul className="answer-list">
-            <Answer answer={this.state.question.answers[0]} clickCallback={this.answerClicked} />
-            <Answer answer={this.state.question.answers[1]} clickCallback={this.answerClicked} />
-            <Answer answer={this.state.question.answers[2]} clickCallback={this.answerClicked} />
-            <Answer answer={this.state.question.answers[3]} clickCallback={this.answerClicked} />
+            <Answer answer={this.state.question.answers[0]} clickCallback={this.answerClicked} correctAnswerLang={this.state.question.language} isCorrect={this.state.question.answers[0] === this.state.question.target} isWrong={this.state.question.answers[0] !== this.state.question.target}/>
+            <Answer answer={this.state.question.answers[1]} clickCallback={this.answerClicked} correctAnswerLang={this.state.question.language} isCorrect={this.state.question.answers[1] === this.state.question.target} isWrong={this.state.question.answers[1] !== this.state.question.target}/>
+            <Answer answer={this.state.question.answers[2]} clickCallback={this.answerClicked} correctAnswerLang={this.state.question.language} isCorrect={this.state.question.answers[2] === this.state.question.target} isWrong={this.state.question.answers[2] !== this.state.question.target}/>
+            <Answer answer={this.state.question.answers[3]} clickCallback={this.answerClicked} correctAnswerLang={this.state.question.language} isCorrect={this.state.question.answers[3] === this.state.question.target} isWrong={this.state.question.answers[3] !== this.state.question.target}/>
           </ul>
         </div>
       );
