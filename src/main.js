@@ -6,6 +6,8 @@ var Link = Router.Link;
 var Q = require('q');
 var _ = require('lodash');
 
+React.initializeTouchEvents(true)
+
 var QuestionLogic = function(sourceName) {
   var self = this;
 
@@ -141,10 +143,14 @@ var App = React.createClass({
   },
   indexTemplate: function() {
     var sources = this.state.sources.map(function(source) {
+    var style = {
+      width: source.progress,
+    };
       return (
         <li>
+          <div className="progress" style={style} />
           <Link to="question" sourceName={source.name}>
-            {source.name} (progress: {source.progress}, langsLearnt: {source.langsLearnt})
+            {source.name}
           </Link>
         </li>  
       );
