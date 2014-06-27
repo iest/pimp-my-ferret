@@ -42,9 +42,15 @@ var QuestionLogic = function(sourceName) {
   self.getFerretImage = function() {
     var image = '/ferrets/' + _.sample(self.ferretImages) + '.jpg';
   
-    console.log(image);
-
     return image;
+  };
+
+  self.getProgress = function() {
+    return Math.floor((self.userList.length / self.masterList.length) * 100, 0).toString() + '%';
+  };
+
+  self.getLangsLearnt = function() {
+    return _.keys(_.groupBy(self.userList, function(word) { return word.lang; })).length;
   };
 
   self.answerQuestion = function(question, answer) {
@@ -105,15 +111,32 @@ var QuestionLogic = function(sourceName) {
 
 var App = React.createClass({
   getInitialState: function() {
+    var self = this;
+
+    var sources = [
+      {
+        name: "Normal Words",
+      },
+      {
+        name: "Palindromes"
+      }
+    ];
+
+    sources.forEach(function(source) {
+      source.logic = new QuestionLogic(source.name);
+    });
+
+    Q.all(sources.map(function(source) { return source.logic.init() })).then(function() {
+      sources.forEach(function(source) {
+        source.progress = source.logic.getProgress();
+        source.langsLearnt = source.logic.getLangsLearnt();
+      });
+
+      self.setState({ sources: sources });
+    });
+
     return {
-      sources: [
-        {
-          name: "Normal Words",
-        },
-        {
-          name: "Palindromes"
-        }
-      ]
+      sources: null
     }
   },
   indexTemplate: function() {
@@ -121,7 +144,7 @@ var App = React.createClass({
       return (
         <li>
           <Link to="question" sourceName={source.name}>
-            {source.name}
+            {source.name} (progress: {source.progress}, langsLearnt: {source.langsLearnt})
           </Link>
         </li>  
       );
@@ -138,11 +161,17 @@ var App = React.createClass({
     );
   },
   render: function() {
-    return (
-      <div className="container">
-        {this.props.activeRoute || this.indexTemplate()}
-      </div>
-    );
+    if (this.state.sources) {
+      return (
+        <div className="container">
+          {this.props.activeRoute || this.indexTemplate()}
+        </div>
+      );
+    } else {
+      return (
+        <h1>Loading...</h1>
+      );   
+    }
   }
 });
 
