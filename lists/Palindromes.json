@@ -1,597 +1,477 @@
-[
-  {
-    "lang": "Albanian", 
-    "en": "side", 
-    "target": "ana"
-  }, 
-  {
-    "lang": "Albanian", 
-    "en": "cover", 
-    "target": "kapak"
-  }, 
-  {
-    "lang": "Albanian", 
-    "en": "chemical", 
-    "target": "kimik"
-  }, 
-  {
-    "lang": "Catalan", 
-    "en": "saddles", 
-    "target": "selles"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "bills", 
-    "target": "regninger"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "between", 
-    "target": "mellem"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "salvage", 
-    "target": "redder"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "kayak", 
-    "target": "kajak"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "radar", 
-    "target": "rader"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "shrimps", 
-    "target": "rejer"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "rotor", 
-    "target": "rotor"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "alders", 
-    "target": "elle"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "forge", 
-    "target": "esse"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "aha", 
-    "target": "aha"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "macaw", 
-    "target": "ara"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "thither", 
-    "target": "did"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "DVD", 
-    "target": "dvd"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "virtue", 
-    "target": "dyd"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "deed", 
-    "target": "dd"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "alone", 
-    "target": "ene"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "trick", 
-    "target": "fif"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "gig", 
-    "target": "gig"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "cook", 
-    "target": "kok"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "humming", 
-    "target": "nyn"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "oboe", 
-    "target": "obo"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "cardboard", 
-    "target": "pap"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "SOS", 
-    "target": "SOS"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "sow's", 
-    "target": "sos"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "tu", 
-    "target": "uhu"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "wife", 
-    "target": "viv"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "bow", 
-    "target": "vov"
-  }, 
-  {
-    "lang": "Danish", 
-    "en": "wow", 
-    "target": "wow"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "necks", 
-    "target": "nekken"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "self/selves", 
-    "target": "mem"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "driver", 
-    "target": "ajaja"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "what", 
-    "target": "apa"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "chapter", 
-    "target": "bab"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "this", 
-    "target": "ini"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "loyal", 
-    "target": "taat"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "penis", 
-    "target": "titit"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "octet", 
-    "target": "ottetto"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "kayak", 
-    "target": "caiac"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "hymns", 
-    "target": "inni"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "sultriness", 
-    "target": "afa"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "agha", 
-    "target": "aga"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "farmyard", 
-    "target": "aia"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "wing", 
-    "target": "ala"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "altar", 
-    "target": "ara"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "eras", 
-    "target": "ere"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "there", 
-    "target": "ivi"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "not", 
-    "target": "non"
-  }, 
-  {
-    "lang": "Dutch", 
-    "en": "gold", 
-    "target": "oro"
-  }, 
-  {
-    "lang": "Punjabi", 
-    "en": "in", 
-    "target": ": mother"
-  }, 
-  {
-    "lang": "Punjabi", 
-    "en": "up", 
-    "target": ": sit"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "non", 
-    "target": "neradodaren"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "apocope", 
-    "target": "apokopa"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "non", 
-    "target": "nededen"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "tartrate", 
-    "target": "tartrat"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "kayak", 
-    "target": "kajak"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "oxygen", 
-    "target": "kisik"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "madam", 
-    "target": "madam"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "throwing", 
-    "target": "meem"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "monomial", 
-    "target": "monom"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "palatal", 
-    "target": "neben"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "marigold", 
-    "target": "neven"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "tender", 
-    "target": "neen"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "burial", 
-    "target": "pokop"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "deluge", 
-    "target": "potop"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "radar", 
-    "target": "radar"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "plowman", 
-    "target": "ratar"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "slope", 
-    "target": "reber"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "rapper", 
-    "target": "reper"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "revers", 
-    "target": "rever"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "rotor", 
-    "target": "rotor"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "agha", 
-    "target": "aga"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "aha", 
-    "target": "aha"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "father", 
-    "target": "ata"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "grandfather", 
-    "target": "ded"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "gag", 
-    "target": "gag"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "going", 
-    "target": "iti"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "it", 
-    "target": "ono"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "dance", 
-    "target": "oro"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "thief", 
-    "target": "tat"
-  }, 
-  {
-    "lang": "Slovene", 
-    "en": "rope", 
-    "target": "vrv"
-  }, 
-  {
-    "lang": "Spanish", 
-    "en": "shave", 
-    "target": "rapar"
-  }, 
-  {
-    "lang": "Spanish", 
-    "en": "wing", 
-    "target": "ala"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "cover", 
-    "target": "aba"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "island", 
-    "target": "ada"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "mother", 
-    "target": "ana"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "elder", 
-    "target": "ata"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "touch!", 
-    "target": "elle"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "two", 
-    "target": "iki"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "push!", 
-    "target": "kak"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "zucchini", 
-    "target": "kabak"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "fugitive", 
-    "target": "kaak"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "poplar", 
-    "target": "kavak"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "ski", 
-    "target": "kayak"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "cake", 
-    "target": "kek"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "immature", 
-    "target": "kelek"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "fretful", 
-    "target": "kllk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "appearance", 
-    "target": "klk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "broken", 
-    "target": "krk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "dim", 
-    "target": "ksk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "servitude", 
-    "target": "kulluk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "small", 
-    "target": "kk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "dashboard", 
-    "target": "kllk"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "dumb", 
-    "target": "lal"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "position", 
-    "target": "maham"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "candle", 
-    "target": "mum"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "why", 
-    "target": "neden"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "radar", 
-    "target": "radar"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "sound", 
-    "target": "ses"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "fog", 
-    "target": "sis"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "sauce", 
-    "target": "sos"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "ornament", 
-    "target": "ss"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "storm", 
-    "target": "talat"
-  }, 
-  {
-    "lang": "Turkish", 
-    "en": "taste", 
-    "target": "tat"
-  }, 
-  {
-    "lang": "Urdu", 
-    "en": "in", 
-    "target": "mother"
-  }, 
-  {
-    "lang": "Urdu", 
-    "en": "in", 
-    "target": "son"
-  }
-]
+[{
+  "lang": "Albanian",
+  "en": "side",
+  "target": "ana"
+}, {
+  "lang": "Albanian",
+  "en": "cover",
+  "target": "kapak"
+}, {
+  "lang": "Albanian",
+  "en": "chemical",
+  "target": "kimik"
+}, {
+  "lang": "Catalan",
+  "en": "saddles",
+  "target": "selles"
+}, {
+  "lang": "Danish",
+  "en": "bills",
+  "target": "regninger"
+}, {
+  "lang": "Danish",
+  "en": "between",
+  "target": "mellem"
+}, {
+  "lang": "Danish",
+  "en": "salvage",
+  "target": "redder"
+}, {
+  "lang": "Danish",
+  "en": "kayak",
+  "target": "kajak"
+}, {
+  "lang": "Danish",
+  "en": "radar",
+  "target": "rader"
+}, {
+  "lang": "Danish",
+  "en": "shrimps",
+  "target": "rejer"
+}, {
+  "lang": "Danish",
+  "en": "rotor",
+  "target": "rotor"
+}, {
+  "lang": "Danish",
+  "en": "alders",
+  "target": "elle"
+}, {
+  "lang": "Danish",
+  "en": "forge",
+  "target": "esse"
+}, {
+  "lang": "Danish",
+  "en": "aha",
+  "target": "aha"
+}, {
+  "lang": "Danish",
+  "en": "macaw",
+  "target": "ara"
+}, {
+  "lang": "Danish",
+  "en": "thither",
+  "target": "did"
+}, {
+  "lang": "Danish",
+  "en": "DVD",
+  "target": "dvd"
+}, {
+  "lang": "Danish",
+  "en": "virtue",
+  "target": "dyd"
+}, {
+  "lang": "Danish",
+  "en": "deed",
+  "target": "dd"
+}, {
+  "lang": "Danish",
+  "en": "alone",
+  "target": "ene"
+}, {
+  "lang": "Danish",
+  "en": "trick",
+  "target": "fif"
+}, {
+  "lang": "Danish",
+  "en": "gig",
+  "target": "gig"
+}, {
+  "lang": "Danish",
+  "en": "cook",
+  "target": "kok"
+}, {
+  "lang": "Danish",
+  "en": "humming",
+  "target": "nyn"
+}, {
+  "lang": "Danish",
+  "en": "oboe",
+  "target": "obo"
+}, {
+  "lang": "Danish",
+  "en": "cardboard",
+  "target": "pap"
+}, {
+  "lang": "Danish",
+  "en": "SOS",
+  "target": "SOS"
+}, {
+  "lang": "Danish",
+  "en": "sow's",
+  "target": "sos"
+}, {
+  "lang": "Danish",
+  "en": "tu",
+  "target": "uhu"
+}, {
+  "lang": "Danish",
+  "en": "wife",
+  "target": "viv"
+}, {
+  "lang": "Danish",
+  "en": "bow",
+  "target": "vov"
+}, {
+  "lang": "Danish",
+  "en": "wow",
+  "target": "wow"
+}, {
+  "lang": "Dutch",
+  "en": "necks",
+  "target": "nekken"
+}, {
+  "lang": "Dutch",
+  "en": "self/selves",
+  "target": "mem"
+}, {
+  "lang": "Dutch",
+  "en": "driver",
+  "target": "ajaja"
+}, {
+  "lang": "Dutch",
+  "en": "what",
+  "target": "apa"
+}, {
+  "lang": "Dutch",
+  "en": "chapter",
+  "target": "bab"
+}, {
+  "lang": "Dutch",
+  "en": "this",
+  "target": "ini"
+}, {
+  "lang": "Dutch",
+  "en": "loyal",
+  "target": "taat"
+}, {
+  "lang": "Dutch",
+  "en": "penis",
+  "target": "titit"
+}, {
+  "lang": "Dutch",
+  "en": "octet",
+  "target": "ottetto"
+}, {
+  "lang": "Dutch",
+  "en": "kayak",
+  "target": "caiac"
+}, {
+  "lang": "Dutch",
+  "en": "hymns",
+  "target": "inni"
+}, {
+  "lang": "Dutch",
+  "en": "sultriness",
+  "target": "afa"
+}, {
+  "lang": "Dutch",
+  "en": "agha",
+  "target": "aga"
+}, {
+  "lang": "Dutch",
+  "en": "farmyard",
+  "target": "aia"
+}, {
+  "lang": "Dutch",
+  "en": "wing",
+  "target": "ala"
+}, {
+  "lang": "Dutch",
+  "en": "altar",
+  "target": "ara"
+}, {
+  "lang": "Dutch",
+  "en": "eras",
+  "target": "ere"
+}, {
+  "lang": "Dutch",
+  "en": "there",
+  "target": "ivi"
+}, {
+  "lang": "Dutch",
+  "en": "not",
+  "target": "non"
+}, {
+  "lang": "Dutch",
+  "en": "gold",
+  "target": "oro"
+}, {
+  "lang": "Punjabi",
+  "en": "in",
+  "target": ": mother"
+}, {
+  "lang": "Punjabi",
+  "en": "up",
+  "target": ": sit"
+}, {
+  "lang": "Slovene",
+  "en": "non",
+  "target": "neradodaren"
+}, {
+  "lang": "Slovene",
+  "en": "apocope",
+  "target": "apokopa"
+}, {
+  "lang": "Slovene",
+  "en": "non",
+  "target": "nededen"
+}, {
+  "lang": "Slovene",
+  "en": "tartrate",
+  "target": "tartrat"
+}, {
+  "lang": "Slovene",
+  "en": "kayak",
+  "target": "kajak"
+}, {
+  "lang": "Slovene",
+  "en": "oxygen",
+  "target": "kisik"
+}, {
+  "lang": "Slovene",
+  "en": "madam",
+  "target": "madam"
+}, {
+  "lang": "Slovene",
+  "en": "throwing",
+  "target": "meem"
+}, {
+  "lang": "Slovene",
+  "en": "monomial",
+  "target": "monom"
+}, {
+  "lang": "Slovene",
+  "en": "palatal",
+  "target": "neben"
+}, {
+  "lang": "Slovene",
+  "en": "marigold",
+  "target": "neven"
+}, {
+  "lang": "Slovene",
+  "en": "tender",
+  "target": "neen"
+}, {
+  "lang": "Slovene",
+  "en": "burial",
+  "target": "pokop"
+}, {
+  "lang": "Slovene",
+  "en": "deluge",
+  "target": "potop"
+}, {
+  "lang": "Slovene",
+  "en": "radar",
+  "target": "radar"
+}, {
+  "lang": "Slovene",
+  "en": "plowman",
+  "target": "ratar"
+}, {
+  "lang": "Slovene",
+  "en": "slope",
+  "target": "reber"
+}, {
+  "lang": "Slovene",
+  "en": "rapper",
+  "target": "reper"
+}, {
+  "lang": "Slovene",
+  "en": "revers",
+  "target": "rever"
+}, {
+  "lang": "Slovene",
+  "en": "rotor",
+  "target": "rotor"
+}, {
+  "lang": "Slovene",
+  "en": "agha",
+  "target": "aga"
+}, {
+  "lang": "Slovene",
+  "en": "aha",
+  "target": "aha"
+}, {
+  "lang": "Slovene",
+  "en": "father",
+  "target": "ata"
+}, {
+  "lang": "Slovene",
+  "en": "grandfather",
+  "target": "ded"
+}, {
+  "lang": "Slovene",
+  "en": "gag",
+  "target": "gag"
+}, {
+  "lang": "Slovene",
+  "en": "going",
+  "target": "iti"
+}, {
+  "lang": "Slovene",
+  "en": "it",
+  "target": "ono"
+}, {
+  "lang": "Slovene",
+  "en": "dance",
+  "target": "oro"
+}, {
+  "lang": "Slovene",
+  "en": "thief",
+  "target": "tat"
+}, {
+  "lang": "Slovene",
+  "en": "rope",
+  "target": "vrv"
+}, {
+  "lang": "Spanish",
+  "en": "shave",
+  "target": "rapar"
+}, {
+  "lang": "Spanish",
+  "en": "wing",
+  "target": "ala"
+}, {
+  "lang": "Turkish",
+  "en": "cover",
+  "target": "aba"
+}, {
+  "lang": "Turkish",
+  "en": "island",
+  "target": "ada"
+}, {
+  "lang": "Turkish",
+  "en": "mother",
+  "target": "ana"
+}, {
+  "lang": "Turkish",
+  "en": "elder",
+  "target": "ata"
+}, {
+  "lang": "Turkish",
+  "en": "touch!",
+  "target": "elle"
+}, {
+  "lang": "Turkish",
+  "en": "two",
+  "target": "iki"
+}, {
+  "lang": "Turkish",
+  "en": "push!",
+  "target": "kak"
+}, {
+  "lang": "Turkish",
+  "en": "zucchini",
+  "target": "kabak"
+}, {
+  "lang": "Turkish",
+  "en": "fugitive",
+  "target": "kaak"
+}, {
+  "lang": "Turkish",
+  "en": "poplar",
+  "target": "kavak"
+}, {
+  "lang": "Turkish",
+  "en": "ski",
+  "target": "kayak"
+}, {
+  "lang": "Turkish",
+  "en": "cake",
+  "target": "kek"
+}, {
+  "lang": "Turkish",
+  "en": "immature",
+  "target": "kelek"
+}, {
+  "lang": "Turkish",
+  "en": "fretful",
+  "target": "kllk"
+}, {
+  "lang": "Turkish",
+  "en": "appearance",
+  "target": "klk"
+}, {
+  "lang": "Turkish",
+  "en": "broken",
+  "target": "krk"
+}, {
+  "lang": "Turkish",
+  "en": "dim",
+  "target": "ksk"
+}, {
+  "lang": "Turkish",
+  "en": "servitude",
+  "target": "kulluk"
+}, {
+  "lang": "Turkish",
+  "en": "small",
+  "target": "kk"
+}, {
+  "lang": "Turkish",
+  "en": "dashboard",
+  "target": "kllk"
+}, {
+  "lang": "Turkish",
+  "en": "dumb",
+  "target": "lal"
+}, {
+  "lang": "Turkish",
+  "en": "position",
+  "target": "maham"
+}, {
+  "lang": "Turkish",
+  "en": "candle",
+  "target": "mum"
+}, {
+  "lang": "Turkish",
+  "en": "why",
+  "target": "neden"
+}, {
+  "lang": "Turkish",
+  "en": "radar",
+  "target": "radar"
+}, {
+  "lang": "Turkish",
+  "en": "sound",
+  "target": "ses"
+}, {
+  "lang": "Turkish",
+  "en": "fog",
+  "target": "sis"
+}, {
+  "lang": "Turkish",
+  "en": "sauce",
+  "target": "sos"
+}, {
+  "lang": "Turkish",
+  "en": "ornament",
+  "target": "ss"
+}, {
+  "lang": "Turkish",
+  "en": "storm",
+  "target": "talat"
+}, {
+  "lang": "Turkish",
+  "en": "taste",
+  "target": "tat"
+}, {
+  "lang": "Urdu",
+  "en": "in",
+  "target": "mother"
+}, {
+  "lang": "Urdu",
+  "en": "in",
+  "target": "son"
+}]
