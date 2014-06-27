@@ -9,6 +9,8 @@ var _ = require('lodash');
 var QuestionLogic = function(sourceName) {
   var self = this;
 
+  self.ferretImages = _.range(0, 10);
+
   self.init = function () {
     return loadMasterList().then(function(masterList) {
       self.masterList = masterList; 
@@ -35,6 +37,14 @@ var QuestionLogic = function(sourceName) {
     };
 
     return question;
+  };
+
+  self.getFerretImage = function() {
+    var image = '/ferrets/' + _.sample(self.ferretImages) + '.jpg';
+  
+    console.log(image);
+
+    return image;
   };
 
   self.answerQuestion = function(question, answer) {
@@ -169,21 +179,15 @@ var Question = React.createClass({
     var result = this.logic.answerQuestion(this.state.question, answer);
 
     if (result) {
-      alert('that is fucking correct!');
-
       this.correctAnswers++;
-
-
     } else {
-      alert('wrong answer asshole!')
-
       this.correctAnswers = 0;
     }
 
-    if (this.correctAnswers === 1) {
+    if (this.correctAnswers === 3) {
       this.correctAnswers = 0;
       
-      this.setState({ ferret: 'http://www.smallanimalchannel.com/images/ferrets-magazine/features/2013/ferret-calendar-1305-racer.jpg' })
+      this.setState({ ferret: this.logic.getFerretImage() })
     
       var self = this;
 
