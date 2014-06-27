@@ -98,7 +98,7 @@ var App = React.createClass({
     return {
       sources: [
         {
-          name: "Normal words"
+          name: "Normal Words",
         },
         {
           name: "Palindromes"
@@ -137,9 +137,12 @@ var App = React.createClass({
 });
 
 var Answer = React.createClass({
+  handleAnswerClick: function() {
+    this.props.clickCallback(this.props.answer);
+  },
   render: function() {
     return (
-      <button>
+      <button onClick={this.handleAnswerClick}>
         {this.props.answer}
       </button>
     );
@@ -148,16 +151,26 @@ var Answer = React.createClass({
 
 var Question = React.createClass({
   getInitialState: function() {
-    var name = this.props.params.sourceName;
-    var creator = new QuestionLogic(name);
-    var question = {};
     var self = this;
 
-    creator.init().then(function() {
-      question = creator.createQuestion();
-      self.setState({question: question});
+    self.logic = new QuestionLogic(this.props.params.sourceName);
+
+    self.logic.init().then(function() {
+      self.setState({ question: self.logic.createQuestion() });
     });
-    return {question: null};
+
+    return { question: null };
+  },
+  answerClicked: function(answer) {
+    var result = this.logic.answerQuestion(this.state.question, answer);
+
+    if (result) {
+      alert('that is fucking correct');
+    } else {
+      alert('wrong answer asshole')
+    }
+
+    this.setState({ question: this.logic.createQuestion() })
   },
   render: function() {
     if (!this.state.question) {
@@ -169,10 +182,10 @@ var Question = React.createClass({
           <Link to="/">Home</Link>
 
           <p>{this.state.question.en}</p>
-          <Answer answer={this.state.question.answers[0]} />
-          <Answer answer={this.state.question.answers[1]} />
-          <Answer answer={this.state.question.answers[2]} />
-          <Answer answer={this.state.question.answers[3]} />
+          <Answer answer={this.state.question.answers[0]} clickCallback={this.answerClicked} />
+          <Answer answer={this.state.question.answers[1]} clickCallback={this.answerClicked} />
+          <Answer answer={this.state.question.answers[2]} clickCallback={this.answerClicked} />
+          <Answer answer={this.state.question.answers[3]} clickCallback={this.answerClicked} />
         </div>
       );
     }
