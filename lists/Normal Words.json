@@ -1,241 +1,91 @@
-[{
-  "en": "name",
-  "target": "naam",
-  "lang": "afrikaans"
-}, {
-  "en": "very",
-  "target": "shumë",
-  "lang": "albanian"
-}, {
-  "en": "through",
-  "target": "pinaagi sa",
-  "lang": "cebuano"
-}, {
-  "en": "sentence",
-  "target": "句子",
-  "lang": "chinese"
-}, {
-  "en": "think",
-  "target": "ajatella",
-  "lang": "finnish"
-}, {
-  "en": "say",
-  "target": "dire",
-  "lang": "french"
-}, {
-  "en": "help",
-  "target": "pab",
-  "lang": "hmon"
-}, {
-  "en": "low",
-  "target": "alacsony",
-  "lang": "hungarian"
-}, {
-  "en": "line",
-  "target": "라인",
-  "lang": "korean"
-}, {
-  "en": "differ",
-  "target": "ຄວາມແຕກຕ່າງກັນ",
-  "lang": "lao"
-}, {
-  "en": "turn",
-  "target": "फलस्वरूप",
-  "lang": "nepali"
-}, {
-  "en": "mean",
-  "target": "mener",
-  "lang": "norwegian"
-}, {
-  "en": "boy",
-  "target": "wiil",
-  "lang": "somali"
-}, {
-  "en": "old",
-  "target": "viejo",
-  "lang": "spanish"
-}, {
-  "en": "random",
-  "target": "ar hap",
-  "lang": "welsh"
-}, {
-  "en": "whatever",
-  "target": "וועלכער",
-  "lang": "yiddish"
-}, {
-  "en": "toilet",
-  "target": "مرحاض",
-  "lang": "arabic"
-}, {
-  "en": "mouse",
-  "target": "rato",
-  "lang": "galician"
-}, {
-  "en": "raspberry",
-  "target": "hindberjum",
-  "lang": "icelandic"
-}, {
-  "en": "beer",
-  "target": "dolor",
-  "lang": "latin"
-}, {
-  "en": "screen",
-  "target": "پرده",
-  "lang": "persian"
-}, {
-  "en": "translate",
-  "target": "kutafsiri",
-  "lang": "swahili"
-}, {
-  "en": "pimp",
-  "target": "կավատ",
-  "lang": "armenian"
-}, {
-  "en": "brothel",
-  "target": "javna kuća",
-  "lang": "croatian"
-}, {
-  "en": "water",
-  "target": "წყლის",
-  "lang": "georian"
-}, {
-  "en": "job",
-  "target": "ọrụ",
-  "lang": "igbo"
-}, {
-  "en": "deadline",
-  "target": "termiņš",
-  "lang": "latvian"
-}, {
-  "en": "car",
-  "target": "samochód",
-  "lang": "polish"
-}, {
-  "en": "helicopter",
-  "target": "helikopter",
-  "lang": "swedish"
-}, {
-  "en": "can",
-  "target": "ngakwazi",
-  "lang": "zulu"
-}, {
-  "en": "duck",
-  "target": "ördək",
-  "lang": "azerbaijni"
-}, {
-  "en": "meat",
-  "target": "maso",
-  "lang": "czech"
-}, {
-  "en": "bin",
-  "target": "kasten",
-  "lang": "german"
-}, {
-  "en": "shower",
-  "target": "dušas",
-  "lang": "lithuanian"
-}, {
-  "en": "rain",
-  "target": "chuva",
-  "lang": "portuguese"
-}, {
-  "en": "condom",
-  "target": "கருத்தடைஉறை",
-  "lang": "tamil"
-}, {
-  "en": "wolf",
-  "target": "serigala",
-  "lang": "indonesian"
-}, {
-  "en": "cat",
-  "target": "katu",
-  "lang": "basque"
-}, {
-  "en": "pyramid",
-  "target": "pyramide",
-  "lang": "danish"
-}, {
-  "en": "lock",
-  "target": "κλειδαριά",
-  "lang": "greek"
-}, {
-  "en": "guitar",
-  "target": "giotár",
-  "lang": "irish"
-}, {
-  "en": "loop",
-  "target": "јамка",
-  "lang": "macedonian"
-}, {
-  "en": "structure",
-  "target": "ਬਣਤਰ",
-  "lang": "punjabi"
-}, {
-  "en": "product",
-  "target": "ఉత్పత్తి",
-  "lang": "telugu"
-}, {
-  "en": "curve",
-  "target": "крывая",
-  "lang": "belarusian"
-}, {
-  "en": "circle",
-  "target": "cirkel",
-  "lang": "dutch"
-}, {
-  "en": "begin",
-  "target": "શરૂ",
-  "lang": "gujarati"
-}, {
-  "en": "bed",
-  "target": "letto",
-  "lang": "italian"
-}, {
-  "en": "table",
-  "target": "jadual",
-  "lang": "malay"
-}, {
-  "en": "dishwasher",
-  "target": "placă",
-  "lang": "romanian"
-}, {
-  "en": "storm",
-  "target": "พายุ",
-  "lang": "thai"
-}, {
-  "en": "black",
-  "target": "কালো",
-  "lang": "bengali"
-}, {
-  "en": "white",
-  "target": "blan",
-  "lang": "haitian creole"
-}, {
-  "en": "red",
-  "target": "赤",
-  "lang": "japanese"
-}, {
-  "en": "yellow",
-  "target": "isfar",
-  "lang": "maltese"
-}, {
-  "en": "cup",
-  "target": "чашка",
-  "lang": "russian"
-}, {
-  "en": "cookie",
-  "target": "kurabiye",
-  "lang": "turkish"
-}, {
-  "en": "bottle",
-  "target": "boca",
-  "lang": "bosnian"
-}, {
-  "en": "alcohol",
-  "target": "alkoholo",
-  "lang": "esperanto"
-}, {
-  "en": "juice",
-  "target": "ruwan 'ya'yan itace",
-  "lang": "hausa"
-}]
+[
+{"en":"name", "target":"naam", "lang":"afrikaans"},
+{"en":"lesbian", "target":"nepatlachhuiliztli", "lang":"nahuatl"},
+{"en":"very", "target":"shumë", "lang":"albanian"},
+{"en":"through", "target":"pinaagi sa", "lang":"cebuano"},
+{"en":"sentence", "target":"句子", "lang":"chinese"},
+{"en":"think", "target":"ajatella", "lang":"finnish"},
+{"en":"say", "target":"dire", "lang":"french"},
+{"en":"help", "target":"pab", "lang":"hmon"},
+{"en":"low", "target":"alacsony", "lang":"hungarian"},
+{"en":"line", "target":"라인", "lang":"korean"},
+{"en":"differ", "target":"ຄວາມແຕກຕ່າງກັນ", "lang":"lao"},
+{"en":"sunny", "target":"layth", "lang":"lapine"},
+{"en":"turn", "target":"फलस्वरूप", "lang":"nepali"},
+{"en":"mean", "target":"mener", "lang":"norwegian"},
+{"en":"boy", "target":"wiil", "lang":"somali"},
+{"en":"old", "target":"viejo", "lang":"spanish"},
+{"en":"random", "target":"ar hap", "lang":"welsh"},
+{"en":"demon", "target":"fìtseng", "lang":"nav'vi"},
+{"en":"whatever", "target":"וועלכער", "lang":"yiddish"},
+{"en":"toilet", "target":"مرحاض", "lang":"arabic"},
+{"en":"mouse", "target":"rato", "lang":"galician"},
+{"en":"raspberry", "target":"hindberjum", "lang":"icelandic"},
+{"en":"beer", "target":"dolor", "lang":"latin"},
+{"en":"screen", "target":"پرده", "lang":"persian"},
+{"en":"translate", "target":"kutafsiri", "lang":"swahili"},
+{"en":"ride", "target":"dothrae", "lang":"dothraki"},
+{"en":"pimp", "target":"կավատ", "lang":"armenian"},
+{"en":"brothel", "target":"javna kuća", "lang":"croatian"},
+{"en":"water", "target":"წყლის", "lang":"georian"},
+{"en":"job", "target":"ọrụ", "lang":"igbo"},
+{"en":"bathroom", "target":"puchpa", "lang":"klingon"},
+{"en":"deadline", "target":"termiņš", "lang":"latvian"},
+{"en":"car", "target":"samochód", "lang":"polish"},
+{"en":"helicopter", "target":"helikopter", "lang":"swedish"},
+{"en":"can", "target":"ngakwazi", "lang":"zulu"},
+{"en":"star", "target":"elen", "lang":"elvish"},
+{"en":"duck", "target":"ördək", "lang":"azerbaijni"},
+{"en":"meat", "target":"maso", "lang":"czech"},
+{"en":"bin", "target":"kasten", "lang":"german"},
+{"en":"shower", "target":"dušas", "lang":"lithuanian"},
+{"en":"rain", "target":"chuva", "lang":"portuguese"},
+{"en":"condom", "target":"கருத்தடைஉறை", "lang":"tamil"},
+{"en":"wolf", "target":"serigala", "lang":"indonesian"},
+{"en":"cat", "target":"katu", "lang":"basque"},
+{"en":"pyramid", "target":"pyramide", "lang":"danish"},
+{"en":"lock", "target":"κλειδαριά", "lang":"greek"},	
+{"en":"guitar", "target":"giotár", "lang":"irish"},
+{"en":"loop", "target":"јамка", "lang":"macedonian"},
+{"en":"structure", "target":"ਬਣਤਰ", "lang":"punjabi"},
+{"en":"product", "target":"ఉత్పత్తి", "lang":"telugu"},
+{"en":"curve", "target":"крывая", "lang":"belarusian"},
+{"en":"circle", "target":"cirkel", "lang":"dutch"},
+{"en":"begin", "target":"શરૂ", "lang":"gujarati"},
+{"en":"bed", "target":"letto", "lang":"italian"},
+{"en":"table", "target":"jadual", "lang":"malay"},
+{"en":"dishwasher", "target":"placă", "lang":"romanian"},
+{"en":"storm", "target":"พายุ", "lang":"thai"},
+{"en":"black", "target":"কালো", "lang":"bengali"},
+{"en":"white", "target":"blan", "lang":"haitian creole"},
+{"en":"red", "target":"赤", "lang":"japanese"},
+{"en":"yellow", "target":"isfar", "lang":"maltese"},
+{"en":"cup", "target":"чашка", "lang":"russian"},
+{"en":"cookie", "target":"kurabiye", "lang":"turkish"},
+{"en":"bottle", "target":"boca", "lang":"bosnian"},
+{"en":"alcohol", "target":"alkoholo", "lang":"esperanto"},
+{"en":"juice", "target":"ruwan 'ya'yan itace", "lang":"hausa"},
+{"en":"boat", "target":"kapal", "lang":"javanese"},
+{"en":"river", "target":"awa", "lang":"maori"},
+{"en":"map", "target":"мапа", "lang":"serbian"},
+{"en":"street", "target":"вулиця", "lang":"ukrainian"},
+{"en":"bank", "target":"банка", "lang":"bulgarian"},
+{"en":"robbery", "target":"röövimine", "lang":"estonian"},
+{"en":"kill", "target":"להרוג", "lang":"hebrew"},
+{"en":"swim", "target":"ಈಜು", "lang":"kannada"},
+{"en":"find", "target":"शोधू", "lang":"marathi"},
+{"en":"fingering", "target":"Фингеринг", "lang":"kazak"},
+{"en":"dive", "target":"skok", "lang":"slovak"},
+{"en":"trunk", "target":"ٹرنک", "lang":"urdu"},
+{"en":"window", "target":"finestra", "lang":"catalan"},
+{"en":"blood", "target":"dugo", "lang":"filipino"},
+{"en":"bite", "target":"काट", "lang":"hindi"},
+{"en":"vampire", "target":"បិសាច", "lang":"khmer"},
+{"en":"werewolf", "target":"хүн чоно", "lang":"mongolian"},
+{"en":"hero", "target":"junak", "lang":"slovenian"},
+{"en":"human", "target":"edan", "lang":"elvish"},
+{"en":"commander", "target":"cano", "lang":"quenya"},
+{"en":"Huh?", "target":"nuqjatlh?", "lang":"klingon"},
+{"en":"sharpen", "target":"ahha", "lang":"dothraki"},
+{"en":"come", "target":"Žaneno", "lang":"verdurian"}
+]
