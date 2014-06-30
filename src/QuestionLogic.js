@@ -1,11 +1,12 @@
 var Q = require('q');
 var _ = require('lodash');
 
-module.export = function(sourceName) {
+var QuestionLogic = function(sourceName) {
   var self = this;
 
+  self.ferretImages = _.range(0, 10);
+
   self.init = function () {
-    debugger;
     return loadMasterList().then(function(masterList) {
       self.masterList = masterList; 
       self.userList = loadUserList();
@@ -26,11 +27,25 @@ module.export = function(sourceName) {
     var question = {
       en: word.en,
       target: word.target,
-      language: word.language,
+      language: word.lang,
       answers: _.shuffle(wrongAnswers.concat(word.target))
     };
 
     return question;
+  };
+
+  self.getFerretImage = function() {
+    var image = '/ferrets/' + _.sample(self.ferretImages) + '.jpg';
+  
+    return image;
+  };
+
+  self.getProgress = function() {
+    return Math.floor((self.userList.length / self.masterList.length) * 100, 0).toString() + '%';
+  };
+
+  self.getLangsLearnt = function() {
+    return _.keys(_.groupBy(self.userList, function(word) { return word.lang; })).length;
   };
 
   self.answerQuestion = function(question, answer) {
@@ -60,7 +75,7 @@ module.export = function(sourceName) {
   }
 
   function saveUserList() {
-    localStorage.saveItem('userList-' + sourceName, JSON.stringify(self.userList));
+    localStorage.setItem('userList-' + sourceName, JSON.stringify(self.userList));
   }
 
   function loadMasterList() {
@@ -88,3 +103,5 @@ module.export = function(sourceName) {
     return deferred.promise;
   }
 };
+
+module.exports = QuestionLogic;
