@@ -11,7 +11,7 @@ React.initializeTouchEvents(true)
 var QuestionLogic = function(sourceName) {
   var self = this;
 
-  self.ferretImages = _.range(0, 10);
+  self.ferretImages = _.range(0, 11);
 
   self.init = function () {
     return loadMasterList().then(function(masterList) {
